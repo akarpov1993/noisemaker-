@@ -1,0 +1,19 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+button {
+    background: #000;
+    width: 20%;
+    margin: 0;
+    padding: 40px;
+    float: left;
+	border: 0;
+}
+.buttons {
+	max-width: 400px;
+	margin: auto;
+}
+.active {
+	background: #fff;
+}
