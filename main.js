@@ -1,3 +1,7 @@
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 let audioContext;
 
 try {
@@ -106,9 +110,20 @@ if (audioContext !== undefined) {
 	
 	//oscillators
 
-	//one
 	var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+	function makeOsc(variable, type, frequency) {
+		variable.type = type;
+		variable.frequency.setValueAtTime(frequency, audioCtx.currentTime); // value in hertz
+		variable.start();
+	}
+
 	
+
+	//one
+	var oscOne = audioCtx.createOscillator();
+	makeOsc(oscOne, 'square', getRandomInt(200, 12000));
+	/*
 	var oscOne = audioCtx.createOscillator();
 
 	oscOne.type = 'square';

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="/main.js" defer></script>
+        <script src="main.js" defer></script>
         <title>noisegenerator</title>
     </head>
     <body>
@@ -31,5 +31,3 @@
 		</div>-->
 	</div>
     </body>
-
-<body>
